@@ -26,9 +26,6 @@ Unzip the downloaded file, and put geckodriver/chromedriver binaries in your $PA
 * If you're new to ruby:
 * Install RVM and Ruby 2.x (for details see https://rvm.io/)
 
-(As of October 2017, Ruby 2.2.8 is in use for the SFDO CI builds. 
-Later versions of Ruby should work, but this version is known to work.
-Note that RVM makes it convenient to switch between versions if you want to.)
 ````
 \curl -sSL https://get.rvm.io | bash -s stable
 rvm install ruby 2.2.8
