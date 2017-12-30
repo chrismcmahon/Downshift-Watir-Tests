@@ -12,3 +12,8 @@ Feature: Downshift Controls on Netlify
     When I click dropdown
       And I click the dropdown box
     Then I should see "Black" and "Red" and "Green"
+
+  Scenario: Instant Search Example
+    When I click instant search
+      And I type "down" for instant search
+    Then I should see "Robert" and "Down" highlighted and "ey Jr." for instant search
