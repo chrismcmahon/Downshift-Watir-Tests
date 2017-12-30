@@ -29,9 +29,9 @@ end
 
 Then("I should see {string} and {string} and {string}") do |color1, color2, color3|
   on(DownshiftNetlifyPage) do |page|
-    expect(page.first_dropdown_result).to eq color1
-    expect(page.second_dropdown_result).to eq color2
-    expect(page.third_dropdown_result).to eq color3
+    expect(page.dropdown_result_first).to eq color1
+    expect(page.dropdown_result_second).to eq color2
+    expect(page.dropdown_result_third).to eq color3
   end
 end
 
