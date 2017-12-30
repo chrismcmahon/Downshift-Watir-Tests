@@ -43,7 +43,7 @@ Once you have Ruby in place, install the bundler gem:
 
 `gem install bundler`
 
-* clone or download the code 
+* clone or download the code git@github.com:chrismcmahon/Downshift-Watir-Tests.git
 
 `bundle install`
 
