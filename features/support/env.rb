@@ -2,6 +2,7 @@ require 'rspec'
 require 'page-object'
 require 'watir'
 
+
 World(PageObject::PageFactory)
 
 def test_name(scenario)
@@ -13,13 +14,12 @@ def test_name(scenario)
 end
 
 Before do |scenario|
-  if ENV['RUN_LOCAL']
     if ENV['SELENIUM_BROWSER']
       @browser = Watir::Browser.new :"#{ENV['SELENIUM_BROWSER']}", detach: true
     else
-      @browser = Watir::Browser.new :firefox, marionette: true
+      @browser = Watir::Browser.new :firefox
     end
-  end
+
 
   sauce_test_name = test_name(scenario)
 
@@ -51,6 +51,8 @@ Before do |scenario|
     STDOUT.write "SauceOnDemandSessionID=" + @session_id
   end
   @random_string = Random.new.rand(100000000000000000000).to_s
+  require 'tty-prompt'
+  @prompt = TTY::Prompt.new
 end
 
 After do |scenario|

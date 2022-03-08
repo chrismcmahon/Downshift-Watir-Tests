@@ -7,3 +7,4 @@ gem 'rspec'
 gem 'cucumber'
 gem 'pry', require: false
 gem 'rubocop', require: false
+gem 'tty-prompt'
